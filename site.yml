@@ -1,8 +1,7 @@
 ---
 
-- hosts: all
+- hosts: localhost
+  connection: local
   become: true
-
   roles:
-
-      - role: "{{ playbook_dir }}"
+    - "{{ playbook_dir }}"
